@@ -168,6 +168,44 @@ grid-area: small-article1;
   font-size: 1.6rem;
   line-height: 1.5;
 }
+@media screen and (max-width: 768px) {
+  .magazine-cover {
+    grid-template-areas:
+      "title"
+      "cover-image"
+      "feature-article"
+      "small-article1"
+      "small-article2";
+    grid-template-columns: 1fr;
+  }
 
+  .cover-image,
+  .feature-article,
+  .small-article1,
+  .small-article2 {
+    width: 100%;
+  }
 
+  .cover-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  body {
+    padding: 1rem;
+  }
+}
 
